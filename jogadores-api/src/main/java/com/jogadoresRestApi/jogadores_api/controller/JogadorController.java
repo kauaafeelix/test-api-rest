@@ -1,8 +1,6 @@
-package com.jogadoresRestApi.jogadores_api.controller;
+package com.jogadores.jogadores_api.controller;
 
 import com.jogadoresRestApi.jogadores_api.model.Jogador;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -14,14 +12,14 @@ public class JogadorController {
 
     private List<Jogador> jogadores = new ArrayList<>();
 
-    @GetMapping(produces = "application/json")
-    public List<Jogador> listarJogadores() {
+    @GetMapping
+    public List<Jogador> listar() {
         return jogadores;
     }
 
-    @PostMapping(consumes = "application/json", produces = "application/json")
-    public ResponseEntity<Jogador> criarJogador(@RequestBody Jogador jogador) {
+    @PostMapping
+    public Jogador criar(@RequestBody Jogador jogador) {
         jogadores.add(jogador);
-        return ResponseEntity.status(HttpStatus.CREATED).body(jogador);
+        return jogador;
     }
 }

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jogadores-api.iml" filepath="$PROJECT_DIR$/.idea/jogadores-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jogadores-api/jogadores-api.iml" filepath="$PROJECT_DIR$/jogadores-api/jogadores-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test-api-rest.iml" filepath="$PROJECT_DIR$/.idea/test-api-rest.iml" />
     </modules>
   </component>
 </project>
